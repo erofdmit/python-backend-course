@@ -1,8 +1,8 @@
 from http import HTTPStatus
-from .math_api import MathAPI
-from .utils import json_response, get_request_body, get_query_params
-from .validation import validate_factorial, validate_fibonacci, validate_mean
-from .calculations import calculate_factorial, calculate_fibonacci, calculate_mean
+from math_api import MathAPI
+from utils import json_response, get_request_body, get_query_params
+from validation import validate_factorial, validate_fibonacci, validate_mean
+from calculations import calculate_factorial, calculate_fibonacci, calculate_mean
 
 app = MathAPI()
 
