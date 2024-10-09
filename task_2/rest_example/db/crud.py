@@ -2,13 +2,13 @@ from typing import List, Optional
 from aiosqlite import Connection
 from ..models.cart import CartResponse, CartItem
 from ..models.item import ItemResponse, ItemCreateRequest, ItemUpdateRequest
-from .utils import fetch_one, fetch_all  
+from .utils import fetch_one, fetch_all
 
 
 async def create_cart(conn: Connection) -> CartResponse:
     await conn.execute("INSERT INTO carts (price) VALUES (0.0)")
     await conn.commit()
-    cart_id = conn.last_insert_rowid 
+    cart_id = conn.last_insert_rowid
     cart_data = await fetch_one(conn, "SELECT * FROM carts WHERE id = ?", (cart_id,))
     if cart_data is None:
         raise ValueError("Не удалось создать корзину.")
@@ -18,11 +18,13 @@ async def create_cart(conn: Connection) -> CartResponse:
 async def create_item(conn: Connection, item_data: ItemCreateRequest) -> ItemResponse:
     await conn.execute(
         "INSERT INTO items (name, price) VALUES (?, ?)",
-        (item_data.name, item_data.price)
+        (item_data.name, item_data.price),
     )
     await conn.commit()
     item_id = conn.last_insert_rowid
-    return ItemResponse(id=item_id, name=item_data.name, price=item_data.price, deleted=False)
+    return ItemResponse(
+        id=item_id, name=item_data.name, price=item_data.price, deleted=False
+    )
 
 
 async def get_item(conn: Connection, item_id: int) -> Optional[ItemResponse]:
@@ -39,7 +41,7 @@ async def get_items_list(
     limit: int = 10,
     min_price: Optional[float] = None,
     max_price: Optional[float] = None,
-    show_deleted: bool = False
+    show_deleted: bool = False,
 ) -> List[ItemResponse]:
     query = "SELECT * FROM items WHERE 1=1"
     params = []
@@ -63,7 +65,9 @@ async def get_items_list(
     return [ItemResponse(**row) for row in rows]
 
 
-async def update_item(conn: Connection, item_id: int, item_update: ItemUpdateRequest) -> Optional[ItemResponse]:
+async def update_item(
+    conn: Connection, item_id: int, item_update: ItemUpdateRequest
+) -> Optional[ItemResponse]:
     query = """
         UPDATE items 
         SET name = COALESCE(?, name), 
@@ -97,7 +101,7 @@ async def get_cart(conn: Connection, cart_id: int) -> Optional[CartResponse]:
         WHERE ci.cart_id = ? AND i.deleted = FALSE
     """
     items_rows = await fetch_all(conn, items_query, (cart_id,))
-    
+
     # Преобразование строк в объекты CartItem
     items = [
         CartItem(
@@ -106,18 +110,15 @@ async def get_cart(conn: Connection, cart_id: int) -> Optional[CartResponse]:
                 id=item_row["item_id"],
                 name=item_row["name"],
                 price=item_row["price"],
-                deleted=False  # Предполагаем, что deleted = FALSE
+                deleted=False,  # Предполагаем, что deleted = FALSE
             ),
             quantity=item_row["quantity"],
-            available=item_row["available"]
-        ) for item_row in items_rows
+            available=item_row["available"],
+        )
+        for item_row in items_rows
     ]
 
-    return CartResponse(
-        id=cart_row["id"],
-        items=items,
-        price=cart_row["price"]
-    )
+    return CartResponse(id=cart_row["id"], items=items, price=cart_row["price"])
 
 
 async def get_cart_list(
@@ -127,7 +128,7 @@ async def get_cart_list(
     min_price: Optional[float] = None,
     max_price: Optional[float] = None,
     min_quantity: Optional[int] = None,
-    max_quantity: Optional[int] = None
+    max_quantity: Optional[int] = None,
 ) -> List[CartResponse]:
     query = "SELECT * FROM carts WHERE 1=1"
     params = []
@@ -164,16 +165,18 @@ async def get_cart_list(
                     id=item_row["id"],
                     name=item_row["name"],
                     price=item_row["price"],
-                    deleted=item_row["deleted"]
+                    deleted=item_row["deleted"],
                 ),
                 quantity=item_row["quantity"],
-                available=item_row["available"]
-            ) for item_row in items_rows
+                available=item_row["available"],
+            )
+            for item_row in items_rows
         ]
 
         total_quantity = sum(item.quantity for item in items)
-        if (min_quantity is not None and total_quantity < min_quantity) or \
-           (max_quantity is not None and total_quantity > max_quantity):
+        if (min_quantity is not None and total_quantity < min_quantity) or (
+            max_quantity is not None and total_quantity > max_quantity
+        ):
             continue
 
         carts.append(CartResponse(id=cart_id, items=items, price=cart_price))
@@ -181,7 +184,9 @@ async def get_cart_list(
     return carts
 
 
-async def add_item_to_cart(conn: Connection, cart_id: int, item_id: int, quantity: int) -> Optional[CartResponse]:
+async def add_item_to_cart(
+    conn: Connection, cart_id: int, item_id: int, quantity: int
+) -> Optional[CartResponse]:
     """Добавление товара в корзину с проверкой на удаление и подсчетом суммы."""
     # Получаем товар и проверяем, не удален ли он
     item = await fetch_one(conn, "SELECT * FROM items WHERE id = ?", (item_id,))
@@ -189,24 +194,30 @@ async def add_item_to_cart(conn: Connection, cart_id: int, item_id: int, quantit
         return None
 
     if item["deleted"]:
-        raise ValueError(f"Товар '{item['name']}' помечен как удаленный и не может быть добавлен в корзину.")
+        raise ValueError(
+            f"Товар '{item['name']}' помечен как удаленный и не может быть добавлен в корзину."
+        )
 
     # Проверка наличия товара в корзине
-    cart_item = await fetch_one(conn, "SELECT * FROM cart_items WHERE cart_id = ? AND item_id = ?", (cart_id, item_id))
+    cart_item = await fetch_one(
+        conn,
+        "SELECT * FROM cart_items WHERE cart_id = ? AND item_id = ?",
+        (cart_id, item_id),
+    )
 
     if cart_item:
         # Если товар уже в корзине, увеличиваем его количество
         new_quantity = cart_item["quantity"] + quantity
         await conn.execute(
             "UPDATE cart_items SET quantity = ?, price = ? * quantity WHERE cart_id = ? AND item_id = ?",
-            (new_quantity, item["price"], cart_id, item_id)
+            (new_quantity, item["price"], cart_id, item_id),
         )
     else:
         # Иначе добавляем новый товар в корзину с расчетом общей стоимости
         total_price = item["price"] * quantity
         await conn.execute(
             "INSERT INTO cart_items (cart_id, item_id, quantity, price) VALUES (?, ?, ?, ?)",
-            (cart_id, item_id, quantity, total_price)
+            (cart_id, item_id, quantity, total_price),
         )
 
     # Обновляем поле `price` в таблице `carts`
@@ -220,7 +231,7 @@ async def add_item_to_cart(conn: Connection, cart_id: int, item_id: int, quantit
         )
         WHERE id = ?
         """,
-        (cart_id, cart_id)
+        (cart_id, cart_id),
     )
 
     await conn.commit()

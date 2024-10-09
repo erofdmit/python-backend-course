@@ -1,13 +1,12 @@
-from dataclasses import dataclass, field
 from uuid import uuid4, UUID
 from typing import Dict, List
 
-from fastapi import APIRouter, WebSocket, WebSocketDisconnect, HTTPException, status, Request
-from fastapi.responses import JSONResponse
+from fastapi import APIRouter, WebSocket, WebSocketDisconnect, HTTPException, status
 
 from ..models.chat import ChatListResponse, CreateChatResponse, PublishMessageRequest
 
-router = APIRouter(prefix='/chat')
+router = APIRouter(prefix="/chat")
+
 
 class Broadcaster:
     def __init__(self):
@@ -36,7 +35,9 @@ class Broadcaster:
 chat_rooms: Dict[UUID, Broadcaster] = {}
 
 
-@router.post("/", response_model=CreateChatResponse, status_code=status.HTTP_201_CREATED)
+@router.post(
+    "/", response_model=CreateChatResponse, status_code=status.HTTP_201_CREATED
+)
 async def create_chat():
     chat_id = uuid4()
     chat_rooms[chat_id] = Broadcaster()

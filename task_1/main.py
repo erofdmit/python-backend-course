@@ -6,20 +6,22 @@ from .math_api import MathAPI
 
 app = MathAPI()
 
+
 @app.route("/factorial")
 async def factorial(scope, receive, send):
     params = get_query_params(scope)
-    n = validate_factorial(params.get('n'))
+    n = validate_factorial(params.get("n"))
     if isinstance(n, HTTPStatus):
         await json_response(send, {"error": n.phrase}, status=n.value)
         return
     result = {"result": calculate_factorial(n)}
     await json_response(send, result)
 
+
 @app.route("/fibonacci/{n}")
 async def fibonacci(scope, receive, send):
-    path_params = scope.get('path_params', {})
-    n_str = path_params.get('n')
+    path_params = scope.get("path_params", {})
+    n_str = path_params.get("n")
     n = validate_fibonacci(n_str)
     if isinstance(n, HTTPStatus):
         await json_response(send, {"error": n.phrase}, status=n.value)
@@ -27,11 +29,16 @@ async def fibonacci(scope, receive, send):
     result = {"result": calculate_fibonacci(n)}
     await json_response(send, result)
 
+
 @app.route("/mean")
 async def mean(scope, receive, send):
     body = await get_request_body(receive)
     if body is None:
-        await json_response(send, {"error": "Unprocessable Entity"}, status=HTTPStatus.UNPROCESSABLE_ENTITY)
+        await json_response(
+            send,
+            {"error": "Unprocessable Entity"},
+            status=HTTPStatus.UNPROCESSABLE_ENTITY,
+        )
         return
     numbers = validate_mean(body)
     if isinstance(numbers, HTTPStatus):
@@ -39,6 +46,7 @@ async def mean(scope, receive, send):
         return
     result = {"result": calculate_mean(numbers)}
     await json_response(send, result)
+
 
 @app.default()
 async def not_found(scope, receive, send):

@@ -1,14 +1,18 @@
 import aiosqlite
-from contextlib import asynccontextmanager
+
 DATABASE_PATH = "./database.db"
+
 
 async def get_db_connection():
     """Возвращает асинхронное соединение с базой данных."""
     return await aiosqlite.connect(DATABASE_PATH)
 
+
 async def init_db():
     """Инициализация базы данных, создание таблиц."""
-    async with aiosqlite.connect(DATABASE_PATH) as conn:  # Используем явное создание подключения
+    async with aiosqlite.connect(
+        DATABASE_PATH
+    ) as conn:  # Используем явное создание подключения
         # Создание таблицы товаров
         await conn.execute("""
             CREATE TABLE IF NOT EXISTS items (

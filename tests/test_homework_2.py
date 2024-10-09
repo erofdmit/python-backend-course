@@ -1,5 +1,4 @@
 from http import HTTPStatus
-from http.client import UNPROCESSABLE_ENTITY
 from typing import Any
 from uuid import uuid4
 
@@ -108,7 +107,7 @@ def test_get_cart(request, cart: int, not_empty: bool) -> None:
         price = 0
 
         for item in response_json["items"]:
-            item_id = item['item']["id"]
+            item_id = item["item"]["id"]
             price += client.get(f"/item/{item_id}").json()["price"] * item["quantity"]
         print(123)
         assert response_json["price"] == pytest.approx(price, 1e-8)

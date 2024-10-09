@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException, Depends, Response, Query, Body
+from fastapi import APIRouter, HTTPException, Depends, Response, Query
 from typing import List, Optional
 from aiosqlite import Connection
 from http import HTTPStatus
@@ -7,10 +7,15 @@ from ..db.db_engine import get_db_connection
 from ..db.crud import create_item, get_item, get_items_list, update_item, delete_item
 from ..errors import ItemNotFoundException, ItemNotModifiedException
 
-router = APIRouter(prefix='/item')
+router = APIRouter(prefix="/item")
+
 
 @router.post("/", response_model=ItemResponse, status_code=HTTPStatus.CREATED)
-async def create_new_item(item: ItemCreateRequest, response: Response, conn: Connection = Depends(get_db_connection)):
+async def create_new_item(
+    item: ItemCreateRequest,
+    response: Response,
+    conn: Connection = Depends(get_db_connection),
+):
     """Создание нового товара."""
     created_item = await create_item(conn, item)
     response.headers["Location"] = f"/item/{created_item.id}"
@@ -33,10 +38,12 @@ async def get_items(
     min_price: Optional[float] = Query(None, ge=0.0, description="Минимальная цена"),
     max_price: Optional[float] = Query(None, ge=0.0, description="Максимальная цена"),
     show_deleted: bool = Query(False, description="Показывать ли удаленные товары"),
-    conn: Connection = Depends(get_db_connection)
+    conn: Connection = Depends(get_db_connection),
 ):
     """Получение списка товаров с фильтрацией."""
-    items = await get_items_list(conn, offset, limit, min_price, max_price, show_deleted)
+    items = await get_items_list(
+        conn, offset, limit, min_price, max_price, show_deleted
+    )
     return items
 
 
@@ -44,7 +51,7 @@ async def get_items(
 async def update_item_by_id(
     item_id: int,
     item_update: ItemCreateRequest,  # PUT требует полного обновления
-    conn: Connection = Depends(get_db_connection)
+    conn: Connection = Depends(get_db_connection),
 ):
     """Замена товара по id (создание запрещено, только замена существующего)."""
     item = await get_item(conn, item_id)
@@ -59,7 +66,7 @@ async def update_item_by_id(
 async def partial_update_item_by_id(
     item_id: int,
     item_update: ItemUpdateRequest,
-    conn: Connection = Depends(get_db_connection)
+    conn: Connection = Depends(get_db_connection),
 ):
     """Частичное обновление товара по id (нельзя изменять поле deleted)."""
     item = await get_item(conn, item_id)
@@ -78,9 +85,9 @@ async def partial_update_item_by_id(
     if "deleted" in update_data:
         raise HTTPException(
             status_code=HTTPStatus.UNPROCESSABLE_ENTITY,
-            detail="Поле 'deleted' нельзя изменять."
+            detail="Поле 'deleted' нельзя изменять.",
         )
-    
+
     # Если данные не изменились, возвращаем статус 304 Not Modified
     if not any(current_data.get(key) != value for key, value in update_data.items()):
         raise ItemNotModifiedException(item_id)
@@ -92,8 +99,7 @@ async def partial_update_item_by_id(
 
 @router.delete("/{item_id}", status_code=HTTPStatus.OK)
 async def delete_item_by_id(
-    item_id: int,
-    conn: Connection = Depends(get_db_connection)
+    item_id: int, conn: Connection = Depends(get_db_connection)
 ):
     """Удаление товара по id (товар помечается как удаленный)."""
     item = await get_item(conn, item_id)

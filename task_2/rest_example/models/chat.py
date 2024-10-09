@@ -2,6 +2,7 @@ from pydantic import BaseModel
 from uuid import UUID
 from typing import List
 
+
 class CreateChatResponse(BaseModel):
     chat_id: UUID
 
