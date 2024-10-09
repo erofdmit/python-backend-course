@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+
+import sys
+import re
+from subprocess import check_output
+
+commit_msg_filepath = sys.argv[1]
+branch = check_output(['git', 'symbolic-ref', '--short', 'HEAD']).decode('utf-8').strip()
+
+regex = '^(build|ci|docs|feat|fix|refactor|revert|style|test){1}-([A-Z1]+-[0-9]+)'
+
+if not re.match(regex, branch):
+    print('Branch name did not matched regex, please check branch naming style')
+    sys.exit(1)

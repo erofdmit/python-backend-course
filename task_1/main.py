@@ -1,8 +1,8 @@
 from http import HTTPStatus
-from math_api import MathAPI
-from utils import json_response, get_request_body, get_query_params
-from validation import validate_factorial, validate_fibonacci, validate_mean
-from calculations import calculate_factorial, calculate_fibonacci, calculate_mean
+from .utils import json_response, get_request_body, get_query_params
+from .validation import validate_factorial, validate_fibonacci, validate_mean
+from .calculations import calculate_factorial, calculate_fibonacci, calculate_mean
+from .math_api import MathAPI
 
 app = MathAPI()
 
@@ -27,7 +27,6 @@ async def fibonacci(scope, receive, send):
     result = {"result": calculate_fibonacci(n)}
     await json_response(send, result)
 
-
 @app.route("/mean")
 async def mean(scope, receive, send):
     body = await get_request_body(receive)
@@ -41,8 +40,6 @@ async def mean(scope, receive, send):
     result = {"result": calculate_mean(numbers)}
     await json_response(send, result)
 
-
-# 404 handler
 @app.default()
 async def not_found(scope, receive, send):
     await json_response(send, {"error": "Not Found"}, status=HTTPStatus.NOT_FOUND.value)

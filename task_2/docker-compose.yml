@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  fastapi_app:
+    build:
+      context: ./
+      dockerfile: rest_example/Dockerfile
+    container_name: fastapi_app
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./rest_example:/app/rest_example
+    environment:
+      - PROMETHEUS_MULTIPROC_DIR=/tmp
+      - PYTHONPATH=/app
+    command: uvicorn rest_example.main:app --host 0.0.0.0 --port 8000 --reload
+    depends_on:
+      - prometheus
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.path=/prometheus"
+      - "--web.console.libraries=/usr/share/prometheus/console_libraries"
+      - "--web.console.templates=/usr/share/prometheus/consoles"
+    ports:
+      - "9090:9090"
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana-storage:/var/lib/grafana
+
+volumes:
+  grafana-storage:

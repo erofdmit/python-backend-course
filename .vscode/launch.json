@@ -1,0 +1,45 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Отладчик Pytest",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "args": [
+                "-vv",
+                "--disable-warnings"
+            ],
+            "jinja": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "cwd": "${workspaceFolder}"
+        },        
+        {
+            "name": "Отладчик Python: FastAPI Task 2",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "task_2.rest_example.main:app",
+                "--reload"
+            ],
+            "jinja": true
+        },
+        {
+            "name": "Отладчик Python: FastAPI Task 1",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "task_1.main:app",
+                "--reload"
+            ],
+            "jinja": true
+        }
+    ]
+}
