@@ -25,4 +25,4 @@ jobs:
       - name: Install dependencies with poetry
         run: poetry install
       - name: Run tests
-        run: PYTHONPATH=./ poetry run pytest -vv --strict --showlocal
+        run: PYTHONPATH=./ poetry run pytest
