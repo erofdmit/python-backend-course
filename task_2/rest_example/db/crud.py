@@ -6,9 +6,9 @@ from .utils import fetch_one, fetch_all
 
 
 async def create_cart(conn: Connection) -> CartResponse:
-    await conn.execute("INSERT INTO carts (price) VALUES (0.0)")
+    cursor = await conn.execute("INSERT INTO carts (price) VALUES (0.0)")
     await conn.commit()
-    cart_id = conn.last_insert_rowid
+    cart_id = cursor.lastrowid
     cart_data = await fetch_one(conn, "SELECT * FROM carts WHERE id = ?", (cart_id,))
     if cart_data is None:
         raise ValueError("Не удалось создать корзину.")
@@ -16,12 +16,12 @@ async def create_cart(conn: Connection) -> CartResponse:
 
 
 async def create_item(conn: Connection, item_data: ItemCreateRequest) -> ItemResponse:
-    await conn.execute(
+    cursor = await conn.execute(
         "INSERT INTO items (name, price) VALUES (?, ?)",
         (item_data.name, item_data.price),
     )
     await conn.commit()
-    item_id = conn.last_insert_rowid
+    item_id = cursor.lastrowid
     return ItemResponse(
         id=item_id, name=item_data.name, price=item_data.price, deleted=False
     )
