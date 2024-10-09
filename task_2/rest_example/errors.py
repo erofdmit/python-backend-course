@@ -16,7 +16,7 @@ class CartNotFoundException(HTTPException):
     def __init__(self, cart_id: int):
         super().__init__(status_code=HTTPStatus.NOT_FOUND, detail=f"Корзина с ID {cart_id} не найдена.")
 
-# Новое исключение для валидации параметров корзины
+# Исключение для валидации параметров корзины
 class CartValidationException(HTTPException):
     def __init__(self, detail: str):
         super().__init__(status_code=HTTPStatus.UNPROCESSABLE_ENTITY, detail=detail)

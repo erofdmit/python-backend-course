@@ -1,5 +1,3 @@
-# main.py
-
 from fastapi import FastAPI, HTTPException
 from fastapi.exceptions import RequestValidationError
 from fastapi.openapi.docs import (
@@ -10,7 +8,7 @@ from fastapi.openapi.docs import (
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from prometheus_fastapi_instrumentator import Instrumentator
-from .routers import cart, item
+from .routers import cart, item, chat,client
 from .errors import http_exception_handler, validation_exception_handler
 from .db.db_engine import init_db, get_db_connection  # Импорт функции инициализации
 from contextlib import asynccontextmanager
@@ -65,6 +63,8 @@ app.add_middleware(
 app.add_exception_handler(HTTPException, http_exception_handler)
 app.add_exception_handler(RequestValidationError, validation_exception_handler)
 
+app.include_router(router=client.router)
+app.include_router(router=chat.router)
 app.include_router(router=item.router)
 app.include_router(router=cart.router)
 
