@@ -6,7 +6,7 @@ import os
 # Настройки из переменных окружения
 PROMETHEUS_URL = "http://127.0.0.1:9090/api/v1/query"
 GRAFANA_URL = "http://127.0.0.1:3000"
-GRAFANA_API_KEY = "glsa_6kfvbkfIOtsBYIgsuI6ArYzJ5XteBMLE_5562b039"
+GRAFANA_API_KEY = ""
 OUTPUT_FILE = "./metrics_report.json"  # Изменил путь на локальный для проверки
 
 # Запросы к метрикам Prometheus
