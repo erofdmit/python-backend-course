@@ -24,5 +24,19 @@ jobs:
         uses: abatilo/actions-poetry@v2
       - name: Install dependencies with poetry
         run: poetry install
-      - name: Run tests
-        run: PYTHONPATH=$(pwd) poetry run pytest -vv
+
+      # Установка PYTHONPATH
+      - name: Set PYTHONPATH
+        run: echo "PYTHONPATH=$(pwd)" >> $GITHUB_ENV
+
+      # Запуск тестов для homework_1
+      - name: Run Test Task 1
+        run: poetry run pytest -vv --strict --showlocals ./tests/test_homework_1.py
+
+      # Запуск тестов для homework_2
+      - name: Run Test Task 2
+        run: poetry run pytest -vv --strict --showlocals ./tests/test_homework_2.py
+
+      # Запуск тестов для homework_4
+      - name: Run Test Task 4
+        run: poetry run pytest -vv --strict --showlocals ./tests/test_homework_4.py

@@ -1,0 +1,2511 @@
+{
+    "rps": [
+        [
+            {
+                "metric": {
+                    "handler": "/chat/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567754.167,
+                    "0.037342"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567754.167,
+                    "0.06638577777777778"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567754.167,
+                    "0.04978933333333334"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567754.167,
+                    "0.012447333333333335"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567754.167,
+                    "0.037342"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/metrics",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567754.167,
+                    "0.17426266666666668"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567754.167,
+                    "0.05393844444444445"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567754.167,
+                    "0.05393844444444445"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567754.167,
+                    "0.04149111111111111"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728567754.167,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567754.167,
+                    "0.06223666666666667"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728567754.167,
+                    "0"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {
+                    "handler": "/chat/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567814.174,
+                    "0.48619204086103146"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567814.174,
+                    "0.4198931261981635"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567814.174,
+                    "0.39779348797720754"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567814.174,
+                    "0.4419927644191195"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567814.174,
+                    "0.5082916790819874"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/metrics",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567814.174,
+                    "0.1694305596939958"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567814.174,
+                    "0.5782738667816814"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567814.174,
+                    "0.5082916790819874"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567814.174,
+                    "0.5267080442661174"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728567814.174,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567814.174,
+                    "0.5193414981924654"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728567814.174,
+                    "0"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {
+                    "handler": "/chat/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567874.178,
+                    "0.8783419797979799"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567874.178,
+                    "0.8143332525252526"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567874.178,
+                    "0.8250013737373738"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567874.178,
+                    "0.8996782222222223"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567874.178,
+                    "0.9210144646464647"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/metrics",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567874.178,
+                    "0.1778020202020202"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567874.178,
+                    "0.9707990303030304"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567874.178,
+                    "0.9494627878787879"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567874.178,
+                    "0.8996782222222223"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728567874.178,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567874.178,
+                    "0.9459067474747476"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728567874.178,
+                    "0"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {
+                    "handler": "/chat/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567934.183,
+                    "1.311277864938659"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567934.183,
+                    "1.2168658586630754"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567934.183,
+                    "1.1958854128240568"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567934.183,
+                    "1.2728137142337914"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567934.183,
+                    "1.3322583107776773"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/metrics",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567934.183,
+                    "0.18882401255116688"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567934.183,
+                    "1.395199648294733"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567934.183,
+                    "1.353238756616696"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567934.183,
+                    "1.2448397864484335"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728567934.183,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567934.183,
+                    "1.367225720509375"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728567934.183,
+                    "0"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {
+                    "handler": "/chat/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567994.187,
+                    "1.7684396677859766"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567994.187,
+                    "1.677210637304954"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567994.187,
+                    "1.589490415688586"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567994.187,
+                    "1.7298427702747747"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567994.187,
+                    "1.8210718007557973"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/metrics",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567994.187,
+                    "0.2035109141499735"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567994.187,
+                    "1.8351070362144162"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567994.187,
+                    "1.7333515791394294"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567994.187,
+                    "1.6842282550342633"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728567994.187,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728567994.187,
+                    "1.800018947567869"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728567994.187,
+                    "0"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {
+                    "handler": "/chat/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568054.193,
+                    "2.052631578947368"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568054.193,
+                    "1.9999999999999998"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568054.193,
+                    "1.950877192982456"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568054.193,
+                    "1.982456140350877"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568054.193,
+                    "2.021052631578947"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/metrics",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568054.193,
+                    "0.06666666666666667"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568054.193,
+                    "2.157894736842105"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568054.193,
+                    "2.0350877192982453"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568054.193,
+                    "1.9438596491228068"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728568054.193,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568054.193,
+                    "2.0421052631578944"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728568054.193,
+                    "0"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {
+                    "handler": "/chat/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568114.197,
+                    "2.1192759374462726"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568114.197,
+                    "2.038575032543517"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568114.197,
+                    "1.9684003326280777"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568114.197,
+                    "1.9894527426027095"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568114.197,
+                    "2.038575032543517"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/metrics",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568114.197,
+                    "0.06666596491966752"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568114.197,
+                    "2.1262934074378164"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568114.197,
+                    "1.9929614775984814"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568114.197,
+                    "1.9578741276407616"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728568114.197,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568114.197,
+                    "2.0034876825857975"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728568114.197,
+                    "0"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {
+                    "handler": "/chat/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568174.202,
+                    "2.0982456140350876"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568174.202,
+                    "2.0421052631578944"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568174.202,
+                    "1.9684210526315788"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568174.202,
+                    "2.0070175438596487"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568174.202,
+                    "2.070175438596491"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/metrics",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568174.202,
+                    "0.06666666666666667"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568174.202,
+                    "2.0842105263157893"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568174.202,
+                    "1.9789473684210523"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568174.202,
+                    "1.9859649122807015"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728568174.202,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568174.202,
+                    "1.9789473684210523"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728568174.202,
+                    "0"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {
+                    "handler": "/chat/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568234.208,
+                    "2.0842105263157893"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568234.208,
+                    "2.0912280701754384"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568234.208,
+                    "1.9999999999999998"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568234.208,
+                    "2.028070175438596"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568234.208,
+                    "2.0561403508771927"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/metrics",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568234.208,
+                    "0.06666666666666667"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568234.208,
+                    "2.0666666666666664"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568234.208,
+                    "1.9719298245614032"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568234.208,
+                    "1.9684210526315788"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728568234.208,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568234.208,
+                    "1.9999999999999998"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728568234.208,
+                    "0"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {
+                    "handler": "/chat/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568294.212,
+                    "2.1087719298245613"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568294.212,
+                    "2.0912280701754384"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568294.212,
+                    "2.03859649122807"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568294.212,
+                    "1.9754385964912278"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568294.212,
+                    "2.03859649122807"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/metrics",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568294.212,
+                    "0.06666666666666667"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568294.212,
+                    "2.0245614035087716"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568294.212,
+                    "1.9578947368421051"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568294.212,
+                    "1.9964912280701752"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728568294.212,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568294.212,
+                    "1.9649122807017543"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728568294.212,
+                    "0"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {
+                    "handler": "/chat/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568354.218,
+                    "2.1052631578947367"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568354.218,
+                    "2.0315789473684207"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568354.218,
+                    "2.028070175438596"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568354.218,
+                    "1.9789473684210523"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568354.218,
+                    "2.0842105263157893"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/metrics",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568354.218,
+                    "0.06666666666666667"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568354.218,
+                    "1.9614035087719297"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568354.218,
+                    "1.9473684210526314"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568354.218,
+                    "1.982456140350877"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728568354.218,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568354.218,
+                    "1.9578947368421051"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728568354.218,
+                    "0"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {
+                    "handler": "/chat/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568414.223,
+                    "1.992989449085786"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568414.223,
+                    "2.12281446601567"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568414.223,
+                    "2.1122881132916254"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568414.223,
+                    "2.010533370292527"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568414.223,
+                    "2.0842178393608397"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/metrics",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568414.223,
+                    "0.06666690058561608"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568414.223,
+                    "1.9719367436376967"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568414.223,
+                    "1.8877259218453397"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568414.223,
+                    "1.9228137642588217"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728568414.223,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568414.223,
+                    "1.9789543121203932"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728568414.223,
+                    "0"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {
+                    "handler": "/chat/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568474.227,
+                    "2.0491228070175436"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568474.227,
+                    "2.0491228070175436"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568474.227,
+                    "2.052631578947368"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568474.227,
+                    "1.950877192982456"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568474.227,
+                    "2.0561403508771927"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/metrics",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568474.227,
+                    "0.06666666666666667"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568474.227,
+                    "2.021052631578947"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568474.227,
+                    "1.9473684210526314"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568474.227,
+                    "1.9649122807017543"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728568474.227,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568474.227,
+                    "1.9333333333333331"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728568474.227,
+                    "0"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {
+                    "handler": "/chat/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568534.231,
+                    "2.056147565430054"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568534.231,
+                    "1.9789543121203932"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568534.231,
+                    "2.0631651339127504"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568534.231,
+                    "1.9579016066723038"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568534.231,
+                    "2.0350948599819647"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/metrics",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568534.231,
+                    "0.06666690058561608"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568534.231,
+                    "2.0982529763262323"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568534.231,
+                    "2.0175509387752237"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568534.231,
+                    "1.992989449085786"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728568534.231,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568534.231,
+                    "1.877199569121295"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728568534.231,
+                    "0"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {
+                    "handler": "/chat/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568594.237,
+                    "2.0140280209543127"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568594.237,
+                    "1.9543791074417285"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568594.237,
+                    "2.0456068575197985"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568594.237,
+                    "2.0210455401910874"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568594.237,
+                    "2.0491156171381855"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/metrics",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568594.237,
+                    "0.06666643274935878"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/item/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568594.237,
+                    "2.1157820498875446"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568594.237,
+                    "1.92630903049463"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "GET",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568594.237,
+                    "1.915782751639468"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728568594.237,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/cart/{cart_id}/add/{item_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "2xx"
+                },
+                "value": [
+                    1728568594.237,
+                    "1.961396626678503"
+                ]
+            },
+            {
+                "metric": {
+                    "handler": "/chat/publish/{chat_id}",
+                    "instance": "fastapi_app:8000",
+                    "job": "fastapi_app",
+                    "method": "POST",
+                    "status": "4xx"
+                },
+                "value": [
+                    1728568594.237,
+                    "0"
+                ]
+            }
+        ]
+    ],
+    "success_rate": [
+        [
+            {
+                "metric": {},
+                "value": [
+                    1728567754.17,
+                    "100"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {},
+                "value": [
+                    1728567814.176,
+                    "100"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {},
+                "value": [
+                    1728567874.181,
+                    "100"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {},
+                "value": [
+                    1728567934.185,
+                    "100"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {},
+                "value": [
+                    1728567994.19,
+                    "100"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {},
+                "value": [
+                    1728568054.195,
+                    "100"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {},
+                "value": [
+                    1728568114.2,
+                    "100"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {},
+                "value": [
+                    1728568174.205,
+                    "100"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {},
+                "value": [
+                    1728568234.21,
+                    "100"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {},
+                "value": [
+                    1728568294.215,
+                    "100"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {},
+                "value": [
+                    1728568354.221,
+                    "100"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {},
+                "value": [
+                    1728568414.225,
+                    "100"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {},
+                "value": [
+                    1728568474.229,
+                    "100"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {},
+                "value": [
+                    1728568534.233,
+                    "100"
+                ]
+            }
+        ],
+        [
+            {
+                "metric": {},
+                "value": [
+                    1728568594.239,
+                    "100"
+                ]
+            }
+        ]
+    ]
+}

@@ -19,5 +19,7 @@ COPY rest_example /app/rest_example
 # Set the PYTHONPATH environment variable
 ENV PYTHONPATH="/app"
 
+EXPOSE 8000
+
 # Run the FastAPI application with uvicorn
 CMD ["uvicorn", "rest_example.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
